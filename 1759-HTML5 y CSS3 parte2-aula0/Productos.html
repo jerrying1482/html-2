@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!indicar version 5>
+<!>
+<html>
+<head>
+  <!etiqietas informativas y diccionario de lenguajes>
+  <meta charset="UTF-8">
+  <title> Productos Barbería Alura</title>
+  <!link para el css que estsa en la misma carpeta>
+  <link rel = "stylesheet" href="reset.css">
+  <link rel="stylesheet"  href="productos.css">
+</head>
+<!encabezado header es a partir de la version 5 de html>
+<body>
+    <header>
+        <div   class="caja">
+            <h1>
+                <!pone una imagen y la fuente>
+                <img src="imagenes/logo.png"></h1>
+                <!listas no ordenadas>
+                <!usamos class para la listas de abajo y poder ponerles formato en el css, sin embargo con NAV puedes meter el panel de navegación>
+                <nav>
+                    <ul>
+                        <!elementos de la lista con bullets, con el elemnto achor podemos hacerlos link incluyendoles una referencia>
+                        <li> <a  href="index.html">Home</a> </li>
+                        <li> <a  href="indexx.html">Productos</a></li>
+                        <li> <a  href="indexxx.html">Contacto</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <main> <!ETIQUETA SEMÁNTICA DEL CUERPO DE LA PÁGINA>
+        <ul class="productos">
+            <li> <! EN LAS LISTAS COMPLEJAS PODEMOS USAR CUAQLUIER TIPO DE CONTENIDO. EJ TITULOS , PÁRRAFOS, ETC.>
+                <h2>Cabello</h2> <! para el título>
+                <img src="imagenes/cabello.jpg"> <! para imagen>
+                <p class="producto-descripcion">Con tijera o máquina al gusto del cliente</p>
+                <p class="producto-precio">$10.00</p>
+              </li>
+
+            <li> 
+                <h2>Barba</h2> <! para el título>
+                <img src="imagenes/barba.jpg"> <! para imagen>
+                <p class="producto-descripcion"></p>Corte y diseño profesional de barba y bigote          </p>
+                <p class="producto-precio">$8.00</p>
+              </li>
+
+              <li> 
+                <h2>Cabello + Barba</h2> <! para el título>
+                <img src="imagenes/cabello+barba.jpg" <! para imagen>
+                <p class="producto-descripcion"></p>Paquete completo de corte de cabello y barba           </p>
+                <p class="producto-precio">$15.00</p>
+              </li>
+         </ul>
+
+    </main>
+
+    <footer>
+        <img src="imagenes/logo-blanco.png">
+        <p class="copyright"> &copy Barbería Alura -2020</p>
+        
+
+    </footer>
+</body>
+
+</html>
+
+

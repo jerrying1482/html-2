@@ -1,0 +1,103 @@
+/*estilo para el encabezado*/
+header{
+    background-color: silver;
+    padding :20px 0px; /*propiedad de espaciamiento externo  20 para superior inferior y cero para laterales*/
+}
+ /*selector de clase caja. Se creó para poder posicionar nuestro encabezado dentro de un div llamado caja*/ 
+.caja{ 
+    width: 1000px; /*ocupame el 70% de la pantalla*/
+    position: relative; /*para que se pueda mover nuestros elementos*/
+    margin:0 auto; /* 0 supuerior inferio y auto para bordes para nuestra caja. con margin auto Delegamos para que el navegador haga la cuenta al calcular la largura restante,
+     dividir entre dos y agregar la mitad en cada uno de los lados.*/
+
+
+
+}
+nav {
+    position:absolute; /*para poder mover el navegador en una posicion*/
+    top: 110px; ;
+    right:0;
+
+}
+
+/*dentro de nav para el elemento li*/
+nav li { 
+    /*para que el espaciamiento sea horazontal*/
+    display: inline;
+    /*fsfasfpara dejar espacio a la izquierda entre cada elementofsfasf*/
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase; /*mayuscula*/
+    color:darkred;/*color*/
+    font-weight: bold; /*remarcado*/
+    font-size: 22px;/*tamaño de letra*/
+    text-decoration: none;/*quitar la linea de bajo a los links*/
+
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+.productos li{
+    display: inline-block; /*para hacer los tres bloques horizontales*/
+    text-align: center;/*para alinear los textos*/
+    width: 30%; /*que ocupen los elementos el 30% cada uno distribuidos horzontalmete*/
+   /* background-color:goldenrod;*/
+    margin: 0 1.5%;/* en los laterales de cada elemento */
+    padding: 30px 20px; /*espaciamiento interno*/
+    box-sizing: border-box; /*hace que se incluya el borde dentro del 30% para que no sobrepase el espacio asignado en px*/
+    vertical-align: top;
+    border-color: black;/*color  del cuadro*/
+    border-width: 2px; /*ancho  del cuadro*/
+    border-style:solid;/*estilo  del cuadro*/
+    border-radius: 10px 10px 10px 10px; /*para redondear*/
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:hover h2{ /*este caso aplica especifico para h2 que esta dentro del li*/
+   font-size: 33px;
+
+}
+
+.productos li:active{
+    border-color:#888c19;
+}
+.productos {
+    width: 940px; /*ocupame el 70% de la pantalla*/
+    margin: 0 auto;
+    padding: 50px; /*lo que va a hacer es seprar 50 px del header para espaciarlo*/
+
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+font-size: 20px;
+font-weight: bold;
+margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright {
+    color:#ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
